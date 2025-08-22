@@ -1,0 +1,121 @@
+*{
+    margin : 0 auto;
+}
+
+body{
+    background-color: white;
+}
+
+.col_1 {width: 8.333333%;}
+.col_2 {width: 16.666666%;}
+.col_3 {width: 25%;}
+.col_4 {width: 33.333333%;}
+.col_5 {width: 41.666666%;}
+.col_6 {width: 50%;}
+.col_7 {width: 58.333333%;}
+.col_8 {width: 66.666666%;}
+.col_9 {width: 75%;}
+.col_10 {width: 83.333333%;}
+.col_11 {width:91.666666%;}
+.col_12 {width: 100%;}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.navbar li{
+    background-color: #518C86;
+    border-radius: 0 0 10px 10px;
+    padding: 15px 15px 15px 15px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+/* .nom
+    margin-top: 150px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #518C86;
+    height: 100px;
+    background-color: #518C86;
+    color: white;
+*/
+
+.box1 {
+    margin-top: 150px;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #518C86;
+    height: 120px;
+    background-color: #518C86;
+    color: white;
+}
+
+.trait {
+    margin : 150px 100px 0 100px;
+}
+
+.myskills {
+    margin-top: 150px;
+    display: flex;
+    text-align: center;
+}
+
+.fe {
+    margin : 50px 0 80px 0;
+    text-align: center;
+}
+
+.be {
+    margin : 80px 0 80px 0;
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    justify-content: start;
+}
+
+img {
+    width: 20%;
+}
+
+.imgD {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img2 {
+    width: 15%;
+}
+
+.img3 {
+    width: 40%;
+}
+
+.tc {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.contact {
+    margin-bottom: 50px;
+}
+
+footer {
+    color: white;
+    background-color: #518C86;
+    height: 60px;
+}
