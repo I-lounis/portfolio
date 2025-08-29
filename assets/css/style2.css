@@ -51,7 +51,7 @@ section {
 }
 
 /* Titre des sections */
-.section-title-box {
+.section_title_box {
     background-color: #1a1f36;
     color: #ffffff;
     padding: 20px;
@@ -94,7 +94,7 @@ section {
 }
 
 /* Boxes */
-.skill-card, .portfolio-card, .contact-card {
+.skill_card, .portfolio_card, .contact_card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,30 +110,30 @@ section {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.skill-card img, .portfolio-card img {
+.skill_card img, .portfolio_card img {
     width: 50px;
     height: 50px;
     margin-bottom: 10px;
     object-fit: contain;
 }
 
-.skill-card p, .portfolio-card p, .contact-card p {
+.skill_card p, .portfolio_card p, .contact_card p {
     font-weight: bold;
     text-align: center;
 }
 
-.skill-card:hover, .portfolio-card:hover, .contact-card:hover {
+.skill_card:hover, .portfolio_card:hover, .contact_card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
-.skills-columns, .portfolio-columns, .contact-columns {
+.skills_columns, .portfolio_columns, .contact_columns {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.skill-category {
+.skill_category {
     display: flex;
     gap: 20px;
 }
@@ -147,7 +147,7 @@ footer {
     margin-top: 50px;
 }
 
-.contact-card {
+.contact_card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -166,7 +166,7 @@ footer {
     /* overflow-wrap: anywhere; /* assure que les emails très longs se coupent correctement */
 }
 
-.contact-card p {
+.contact_card p {
     font-weight: bold;
     text-align: center;
     font-size: 0.95em; /* taille légèrement plus petite pour tenir dans la box */
@@ -189,7 +189,7 @@ footer {
         margin: 5px 0;
     }
 
-    .skill-category {
+    .skill_category {
         flex-direction: column;
         align-items: center;
     }
