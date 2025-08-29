@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Lounici Ilyes</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style2.css">
 </head>
 <body>
-    <!-- Header / Navigation -->
     <header>
         <nav aria-label="Navigation principale">
             <ul class="navbar">
@@ -21,17 +21,15 @@
     </header>
 
     <main>
-        <!-- Section Accueil -->
         <section id="accueil" class="row">
             <div class="col_12 box1">
                 <h1 class="nom">Lounici Ilyes</h1>
-                <p>Développeur web et web mobile</p>
+                <p class="description">Jeune développeur web motivé et créatif, passionné par la création d’expériences web modernes et intuitives.</p>
             </div>
         </section>
 
         <hr class="trait">
 
-        <!-- Section À propos -->
         <section id="apropos" class="row">
             <div class="col_12">
                 <h2>À propos</h2>
@@ -41,56 +39,39 @@
 
         <hr class="trait">
 
-        <!-- Section Compétences -->
         <section id="competences" class="row myskills">
-            <div class="col_12">
+            <div class="col_12 section-title-box">
                 <h2>Mes Compétences</h2>
             </div>
 
             <div class="skills-columns row">
-                <!-- Front-end -->
-                <div class="col_6 skill-category">
-                    <h3>Front-end</h3>
+                <div class="skill-category">
                     <div class="skill-card">
+                        <img src="assets/img/HTML5_logo_and_wordmark.svg.png" alt="Logo HTML5">
                         <p>HTML5</p>
-                        <div class="skill-bar">
-                            <div class="skill-level html"></div>
-                        </div>
                     </div>
                     <div class="skill-card">
+                        <img src="assets/img/CSS3_logo_and_wordmark.svg.png" alt="Logo CSS3">
                         <p>CSS3</p>
-                        <div class="skill-bar">
-                            <div class="skill-level css"></div>
-                        </div>
                     </div>
                     <div class="skill-card">
+                        <img src="assets/img/JavaScript-Logo.png" alt="Logo JavaScript">
                         <p>JavaScript</p>
-                        <div class="skill-bar">
-                            <div class="skill-level js"></div>
-                        </div>
                     </div>
                 </div>
 
-                <!-- Back-end -->
-                <div class="col_6 skill-category">
-                    <h3>Back-end</h3>
+                <div class="skill-category">
                     <div class="skill-card">
+                        <img src="assets/img/PHP-logo.svg.png" alt="Logo PHP">
                         <p>PHP</p>
-                        <div class="skill-bar">
-                            <div class="skill-level php"></div>
-                        </div>
                     </div>
                     <div class="skill-card">
+                        <img src="assets/img/Php-POO.jpg" alt="PHP Orienté Objet">
                         <p>PHP OOP</p>
-                        <div class="skill-bar">
-                            <div class="skill-level phpoop"></div>
-                        </div>
                     </div>
                     <div class="skill-card">
-                        <p>SQL</p>
-                        <div class="skill-bar">
-                            <div class="skill-level sql"></div>
-                        </div>
+                        <img src="assets/img/Sql_data_base_with_logo.png" alt="Logo SQL">
+                        <p>SQL / Base de données</p>
                     </div>
                 </div>
             </div>
@@ -98,33 +79,43 @@
 
         <hr class="trait">
 
-        <!-- Section Portfolio -->
         <section id="portfolio" class="row">
-            <div class="col_12 tc">
+            <div class="col_12 section-title-box">
                 <h3>Portfolio</h3>
             </div>
-            <div class="col_4"><img src="" alt="Projet 1"></div>
-            <div class="col_4"><img src="" alt="Projet 2"></div>
-            <div class="col_4"><img src="" alt="Projet 3"></div>
+            <div class="portfolio-columns row">
+                <div class="portfolio-card">
+                    <img src="" alt="Projet 1">
+                    <p>Projet 1</p>
+                </div>
+                <div class="portfolio-card">
+                    <img src="" alt="Projet 2">
+                    <p>Projet 2</p>
+                </div>
+                <div class="portfolio-card">
+                    <img src="" alt="Projet 3">
+                    <p>Projet 3</p>
+                </div>
+            </div>
         </section>
 
         <hr class="trait">
 
-        <!-- Section Contact -->
         <section id="contact" class="row">
-            <div class="col_12 tc">
+            <div class="col_12 section-title-box">
                 <h3>Contact</h3>
             </div>
-            <div class="col_6 tc contact">
-                <p>Adresse mail : <a href="mailto:ilyes.lounicipro@gmail.com">ilyes.lounicipro@gmail.com</a></p>
-            </div>
-            <div class="col_6 tc contact">
-                <p>Numéro de téléphone : <a href="tel:0660461927">0660461927</a></p>
+            <div class="contact-columns row">
+                <div class="contact-card">
+                    <p>Adresse mail : <a href="mailto:ilyes.lounicipro@gmail.com">ilyes.lounicipro@gmail.com</a></p>
+                </div>
+                <div class="contact-card">
+                    <p>Numéro de téléphone : <a href="tel:0660461927">0660461927</a></p>
+                </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
         <p>© 2025 I-Lounici. Tous droits réservés</p>
     </footer>

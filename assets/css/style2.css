@@ -1,0 +1,196 @@
+/* Reset et box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+/* Navigation */
+header {
+    background-color: #1a1f36;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 15px 0;
+    flex-wrap: wrap;
+}
+
+.navbar li {
+    margin: 0 15px;
+    border-radius: 0 0 10px 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    background-color: #5dade2;
+    color: #1a1f36;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+/* Titre des sections */
+.section-title-box {
+    background-color: #1a1f36;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Accueil */
+.box1 {
+    background-color: #5dade2;
+    color: white;
+    padding: 50px 20px;
+    border-radius: 30px;
+    text-align: center;
+    min-height: 150px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.description {
+    font-size: 1.1em;
+    margin-top: 15px;
+}
+
+/* HR stylisé */
+.trait {
+    width: 80%;
+    margin: 80px auto;
+    border: 0;
+    height: 3px;
+    background: linear-gradient(to right, #1a1f36, #5dade2);
+    border-radius: 2px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Boxes */
+.skill-card, .portfolio-card, .contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #5dade2;
+    color: #1a1f36;
+    padding: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card img, .portfolio-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.skill-card p, .portfolio-card p, .contact-card p {
+    font-weight: bold;
+    text-align: center;
+}
+
+.skill-card:hover, .portfolio-card:hover, .contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.skills-columns, .portfolio-columns, .contact-columns {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-category {
+    display: flex;
+    gap: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1f36;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 50px;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #5dade2;
+    color: #1a1f36;
+    padding: 20px;
+    width: 100%; /* prend toute la largeur disponible dans la colonne */
+    max-width: 300px; /* limite la largeur sur grand écran */
+    min-height: 120px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* word-wrap: break-word; /* autorise le texte à se couper */
+    /* overflow-wrap: anywhere; /* assure que les emails très longs se coupent correctement */
+}
+
+.contact-card p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.95em; /* taille légèrement plus petite pour tenir dans la box */
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        /* gap: 30px; */
+        align-items: center;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin: 5px 0;
+    }
+
+    .skill-category {
+        flex-direction: column;
+        align-items: center;
+    }
+}
